@@ -24,38 +24,31 @@ def decide_winner(user_choice, computer_choice, user_score, computer_score):
   computer_choice_index = options.index(computer_choice)
   if user_choice_index == computer_choice_index:
     print ("It's a tie")
+    print ("user : computer %d : %d" % (user_score, computer_score))
   elif user_choice_index == 0 and computer_choice_index == 2:
     print (WIN_MESSAGE)
     user_score += 1
     print ("user : computer %d : %d" % (user_score, computer_score))
     if user_score == 3:
       play_game = False
-    else:
-      return user_score
   elif user_choice_index == 1 and computer_choice_index == 0:
     print (WIN_MESSAGE)
     user_score += 1
     print ("user : computer %d : %d" % (user_score, computer_score))
     if user_score == 3:
       play_game = False
-    else:
-      return user_score
   elif user_choice_index == 2 and computer_choice_index == 1:
     print (WIN_MESSAGE)
     user_score += 1
     print ("user : computer %d : %d" % (user_score, computer_score))
     if user_score == 3:
       play_game = False
-    else:
-      return user_score
   else:
     print (LOSS_MESSAGE)
     computer_score += 1
     print ("user : computer %d : %d" % (user_score, computer_score))
     if computer_score == 3:
       play_game = False
-    else:
-      return computer_score
 
 def play_RPS():
   print ("Rock, Paper, Scissors")
