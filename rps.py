@@ -5,6 +5,9 @@ Rock, Paper, Scissors:
 3. Compare the user's choice with the computer's choice
 4. Who is the winner - condition
 5. Inform user who is the winner
+
+LIST TODO:
+add increase the result
 """
 
 from random import randint
